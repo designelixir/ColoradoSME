@@ -20,9 +20,7 @@
       </div>
       <div class="welcome-info">
       <div class="welcome-content container">
-              <h1 class="center"> Join SME for a day of golf to help local mining students make the grade! </h1>
               <squarespace:block-field id="welcome-info" columns="12" />
-
           </div>
       </div>
 

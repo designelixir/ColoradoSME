@@ -19,9 +19,14 @@
         </header>
       </div>
       <div class="welcome-info">
-          <div class="welcome-content container">
+      <span>
+          <div class="welcome-content container forest-green-bg">
               <squarespace:block-field id="welcome-info" columns="12" />
           </div>
+          <div class="welcome-content container tan-bg">
+              <squarespace:block-field id="event-info" columns="12" />
+          </div>
+          </span>
       </div>
 
 

@@ -7,111 +7,34 @@
 /* General syles
 ***************************************************/
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont,
-    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
-    "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  font-size: 100%;
-  font-weight: normal;
-}
+* {font-family: rustica,sans-serif; box-sizing: border-box;}
+html {width: 100%; border: 2px solid lime; overflow-x: hidden}
 
-.site-container {
-  line-height: 1.6em;
-  color: #777;
-  max-width: 1020px;
-  padding: 6vw;
+body {background-image: url('../assets/img.webp'); background-size: cover; background-repeat: no-repeat;}
 
-  h1, h2, h3 {
-    font-weight: normal;
-    line-height: 1.2em;
-  }
-
-  a {
-    color: cornflowerblue;
-
-    &.disabled {
-      color: #ccc;
-    }
-  }
-}
-
-.site-header {
-  margin-bottom: 4vw;
-}
-
-.site-navigation { }
-
-.site-navigation-list {
-  padding: 0;
-}
-
-.site-navigation-item {
-  display: inline-block;
-  font-size: 87.5%;
-
-  & + .site-navigation-item {
-    margin-left: 1em;
-  }
-
-  a {
-    color: #111;
-    text-decoration: none;
-
-    &:hover {
-      color: #999;
-    }
-  }
-
-  &.active-link > a {
-    color: #999;
-  }
+h1 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
 
 }
 
-.site-title-heading {
+h2 {font-size: 28px; font-weight: 500;}
+.italic {font-style: italic;}
+.center {text-align: center;}
+a {font-weight: 400; text-decoration: none; color: inherit} 
 
-  .site-title-link {
-    color: #111;
-    font-weight: 400;
-    text-decoration: none;
-  }
-}
-
-.content-container { }
-
-.site-footer {
-  font-size: 75%;
-  margin-top: 4vw;
-  margin-bottom: 4vw;
-}
-
-
-
-/* Homepage
-***************************************************/
-
-body.homepage { }
-
-
-
-/* Blog list
-***************************************************/
-
-body.collection-type-blog.view-list {
-
-  .blog-list-item + .blog-list-item {
-    margin-top: 3vw;
-  }
-}
-
-
-
-/* Break grid and stack blocks on small screens
-***************************************************/
+.container {padding: 3rem;}
 
 @media screen and (max-width: 640px) {
   @import 'sqs-grid-breaker';
 }
+
+.button-style {background: #2B3226; color: white; padding: 10px 20px; font-size: 18px;}
+
+header {position: sticky;}
+.site-header {display: flex; justify-content: space-between; align-items: center;}
+.site-navigation-item {list-style: none; display: flex; justify-content: flex-end;}
+
 
 

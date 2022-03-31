@@ -3,6 +3,8 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.typekit.net/bcl6jxx.css">
+
 
     <!-- include system scripts, page meta, and header code injection -->
     {squarespace-headers}
@@ -12,16 +14,13 @@
     <div class="site-container">
 
       <header class="site-header">
-        <!-- site navigation -->
+        <a href="/"><img class="dropshadow" style="height: 100px;" src="{website.logoImageUrl}" alt="Society for Mining Metallurly and Exploration Colorado Branch Logo"/></a>
         <squarespace:navigation navigationId="siteNav" template="site-navigation" />
-
-        <!-- site title or logo -->
-        {.section website}
-          <h1 class="site-title-heading" data-content-field="site-title">
-            <a href="/" class="site-title-link">{siteTitle}</a>
-          </h1>
-        {.end}
       </header>
+      <div class="container">
+        <h2 class="italic center"> The Society for Metallurgy, Mining &amp; Exploration cordially invites you to participate in its </h2>
+        <h1 class="center">2022 Scholarship Fundraiser Golf Tournament</h1>
+      </div>
 
       <!-- cms content injection point -->
       <main class="content-container" role="main" data-content-field="main-content">
@@ -40,6 +39,9 @@
 
     <!-- other scripts, and footer code injection -->
     {squarespace-footers}
+ 
+
+
 
   </body>
 </html>

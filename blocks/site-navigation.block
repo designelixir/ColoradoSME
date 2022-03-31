@@ -1,4 +1,4 @@
-<nav class="site-navigation">
+<nav class="site-navigation container">
   <ul class="site-navigation-list">
     {.repeated section items}
 
@@ -6,7 +6,7 @@
 
         <!-- collection link -->
         {.section collection}
-          <a href="{fullUrl}">{navigationTitle}</a>
+          <a href="{fullUrl}" class="button-style">{navigationTitle}</a>
         {.end}
 
         <!-- external link -->

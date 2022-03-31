@@ -20,7 +20,13 @@
 
 
       <!-- cms content injection point -->
-      <main class="content-container" role="main" data-content-field="main-content">
+      <main class="content-container container" role="main" data-content-field="main-content">
+       <div style="height: 70vh; border: 1px solid red; display: flex; align-items: flex-end;">
+        <squarespace:block-field id="welcome-info" columns="12" />
+       
+       </div>
+       
+       
        {squarespace.main-content}
       </main>
 

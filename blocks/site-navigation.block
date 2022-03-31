@@ -6,7 +6,7 @@
 
         <!-- collection link -->
         {.section collection}
-          <a href="{fullUrl}" class="button-style">{navigationTitle}</a>
+          <a href="{fullUrl}" class="button-style forest-green-bg">{navigationTitle}</a>
         {.end}
 
         <!-- external link -->

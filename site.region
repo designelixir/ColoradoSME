@@ -17,10 +17,7 @@
         <a href="/"><img class="dropshadow" style="height: 100px;" src="{website.logoImageUrl}" alt="Society for Mining Metallurly and Exploration Colorado Branch Logo"/></a>
         <squarespace:navigation navigationId="siteNav" template="site-navigation" />
       </header>
-      <div class="container">
-        <h2 class="italic center"> The Society for Metallurgy, Mining &amp; Exploration cordially invites you to participate in its </h2>
-        <h1 class="center">2022 Scholarship Fundraiser Golf Tournament</h1>
-      </div>
+
 
       <!-- cms content injection point -->
       <main class="content-container" role="main" data-content-field="main-content">

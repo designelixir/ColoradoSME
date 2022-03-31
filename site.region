@@ -12,18 +12,26 @@
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
 
     <div class="site-container">
+      <div class="header-container">
+        <header class="site-header">
+          <a href="/"><img class="dropshadow" style="height: 100px;" src="{website.logoImageUrl}" alt="Society for Mining Metallurly and Exploration Colorado Branch Logo"/></a>
+          <squarespace:navigation navigationId="siteNav" template="site-navigation" />
+        </header>
+      </div>
+      <div class="welcome-info">
+      <div class="welcome-content container">
+              <h1 class="center"> Join SME for a day of golf to help local mining students make the grade! </h1>
+              <squarespace:block-field id="welcome-info" columns="12" />
 
-      <header class="site-header">
-        <a href="/"><img class="dropshadow" style="height: 100px;" src="{website.logoImageUrl}" alt="Society for Mining Metallurly and Exploration Colorado Branch Logo"/></a>
-        <squarespace:navigation navigationId="siteNav" template="site-navigation" />
-      </header>
+          </div>
+      </div>
 
 
       <!-- cms content injection point -->
       <main class="content-container container" role="main" data-content-field="main-content">
        <div style="height: 70vh; border: 1px solid red; display: flex; align-items: flex-end;">
         <squarespace:block-field id="welcome-info" columns="12" />
-       
+          
        </div>
        
        

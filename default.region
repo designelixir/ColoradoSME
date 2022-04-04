@@ -12,9 +12,9 @@
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
 
     <div class="site-container">
-      <div class="header-container">
+      <div class="header-container" style="background-image:url({collection.mainImage.assetUrl})">
         <header class="site-header">
-          <a href="/"><img class="dropshadow" style="height: 100px;" src="{website.logoImageUrl}" alt="Society for Mining Metallurly and Exploration Colorado Branch Logo"/></a>
+          <a href="/"><img class="dropshadow" style="height: 75px; padding-left: 3vw;" src="{website.logoImageUrl}" alt="Society for Mining Metallurly and Exploration Colorado Branch Logo"/></a>
           <squarespace:navigation navigationId="siteNav" template="site-navigation" />
         </header>
       </div>
@@ -22,7 +22,7 @@
       <span>
           <div class="welcome-content container forest-green-bg">
               <h1 class="center">{collection.title}</h1>
-              <h2 class="center">{collect.description}</h2>
+              <h3 class="center">{collection.description}</h3>
           </div>
           </span>
       </div>
@@ -34,8 +34,15 @@
       </main>
 
       <!--Footer with open block field -->
-      <footer class="site-footer">
-        <squarespace:block-field id="footerBlocks" columns="12" />
+      <footer class="site-footer dark-green-bg container">
+        <p><a href="https://community.smenet.org/colorado/home?ssopc=1" target="_blank">This site is affiliated with the Society of Mining, Metallurgy &amp; Exploration, Colorado Branch. Click here for the Official Website.</a></p>
+        <p> For questions, please contact Alex Holtzapple at <a href="mailto:alex@metsim.com">alex@metsim.com</a>.<br>
+        Copyright &copy; SME Colorado 2022 </p>
+
+        <span class="container" style="display: flex; align-items: center; justify-content: center;">
+          <a href="/"><img class="dropshadow" style="height: 75px; padding-left: 2rem;" src="{website.logoImageUrl}" alt="Society for Mining Metallurly and Exploration Colorado Branch Logo"/></a>
+        </span>
+        
       </footer>
 
     </div>

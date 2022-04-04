@@ -21,7 +21,8 @@
       <div class="welcome-info">
       <span>
           <div class="welcome-content container forest-green-bg">
-              <h1 class="center">{website.navigationTitle}</h1>
+              <h1 class="center">{collection.title}</h1>
+              <h2 class="center">{collect.description}</h2>
           </div>
           </span>
       </div>

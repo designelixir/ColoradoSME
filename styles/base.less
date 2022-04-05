@@ -43,7 +43,28 @@ header {position: sticky; background: -moz-linear-gradient(0deg, rgba(98,145,133
 .welcome-info {width: 100%; margin-top: -15vh; display: flex; align-items: center; justify-content: center;}
 .welcome-content {width: 94vw; color: white;}
 
+.sqs-pill-shopping-cart-content {height: 50px!important;}
+.sqs-pill-shopping-cart.sqs-scalable-hidden {display: block!important;}
 footer {width: 100vw; text-align: center;}
+
+span.back-arrow:after {
+  content: "Back to Tickets";
+  padding: 10px 20px;
+  border-radius: 2px;
+}
+
+.product-quantity-input {
+  order: 2 !important;
+}
+.ProductItem-details .sqs-add-to-cart-button-wrapper {
+  order: 3 !important;
+}
+.ProductItem-details-excerpt {
+  order: 4 !important;
+}
+.product-price {
+  order: 5 !important;
+}
 
 @media screen and (max-width: 640px) {
   @import 'sqs-grid-breaker';

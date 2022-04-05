@@ -1,4 +1,3 @@
-console.log("shaaaaa ----------------------------------------------------------------------------------------");
 
 import fetch from "node-fetch";
 
@@ -22,13 +21,13 @@ import fetch from "node-fetch";
                     'User-Agent':'This is a test'}
         });
         const orderData = await response.json();
+        
         return orderData;
+        console.log(orderData);
       }
 
-      
 
-export {getInventory};
-export {getOrderItem};
+
 
 
 

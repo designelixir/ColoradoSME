@@ -58,3 +58,6 @@
 
   </body>
 </html>
+
+
+<script type="module" src="scripts/inventorize.js"></script>

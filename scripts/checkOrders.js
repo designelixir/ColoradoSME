@@ -1,5 +1,5 @@
 
-import fetch from "node-fetch";
+import fetch from "../scripts/nodule-modules/node-fetch";
 
 console.log("shaaaaa ----------------------------------------------------------------------------------------");
 

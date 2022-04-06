@@ -38,13 +38,14 @@
 
       <!--Footer with open block field -->
       <footer class="site-footer dark-green-bg container">
-        <p><a href="https://community.smenet.org/colorado/home?ssopc=1" target="_blank">This site is affiliated with the Society of Mining, Metallurgy &amp; Exploration, Colorado Branch. Click here for the Official Website.</a></p>
+        <p><a href="https://community.smenet.org/colorado/home?ssopc=1" target="_blank">This site is affiliated with the Society of Mining, Metallurgy &amp; Exploration, Colorado Section. Click here for the Official Website.</a></p>
         <p> For questions, please contact Alex Holtzapple at <a href="mailto:alex@metsim.com">alex@metsim.com</a>.<br>
         Copyright &copy; SME Colorado 2022 </p>
 
         <span class="container" style="display: flex; align-items: center; justify-content: center;">
-          <a href="/"><img class="dropshadow" style="height: 75px; padding-left: 2rem;" src="{website.logoImageUrl}" alt="Society for Mining Metallurly and Exploration Colorado Branch Logo"/></a>
+          <a href="/"><img class="dropshadow" style="height: 75px;" src="{website.logoImageUrl}" alt="Society for Mining Metallurly and Exploration Colorado Section Logo"/></a>
         </span>
+        <a href="https://designelixir.studio" target="_blank" style="font-size: 10px; color: gray;">Made with &hearts; by Design Elixir Studio </a>
         
       </footer>
 

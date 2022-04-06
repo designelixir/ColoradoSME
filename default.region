@@ -16,7 +16,7 @@
 
     <div class="site-container">
      
-      <div class="header-container" style="background-image:url({collection.mainImage.assetUrl}); height: 20vh;">
+      <div class="header-container" style="background-image:url({collection.mainImage.assetUrl}); ">
         <squarespace:navigation navigationId="siteNav" template="site-navigation" />
       </div>
 

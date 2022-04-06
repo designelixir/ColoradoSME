@@ -25,7 +25,6 @@
 
 }());
 
-
 function removeZeros() {
   var prices = document.getElementsByClassName('sqs-money-native');
   var thisPrice;

@@ -25,6 +25,7 @@
       <span>
           <div class="welcome-content container forest-green-bg">
               <h1 class="center">{collection.title}</h1>
+              <a id="back-btn" style="display: none;"  href="/buy-tickets"> &larr; Back to Tickets & Sponsorships </a>
           </div>
           </span>
       </div>
@@ -63,3 +64,18 @@
 
 
 <script type="module" src="scripts/inventorize.js"></script>
+<script>
+
+var detect = document.getElementById('productDetails');
+console.log(detect);
+if(detect.length === 0) {console.log("this is a product")}
+else {document.getElementById('back-btn').style.display = "block"}
+
+
+
+
+
+
+
+
+</script>

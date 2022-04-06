@@ -5,7 +5,7 @@
       <a href="/"><img src="../assets/home.svg" class="icon" alt="home icon"></a>
       <a class="hide" href="https://community.smenet.org/colorado/home" target="_blank">SME Colorado Website</a>
       <a href="/buy-tickets" class="forest-green-bg button-style">Buy Tickets</a>
-      <a href="/cart"><img src="../assets/shopping-cart.svg" class="icon" alt="shopping cart icon"></a>
+      {#  <a href="/cart"><img src="../assets/shopping-cart.svg" class="icon" alt="shopping cart icon"></a>  }
 
 
 

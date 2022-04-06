@@ -1,23 +1,5 @@
-
-/* CSS pre-processing by {less}. http://lesscss.org/
-***************************************************/
-
-
-
-/* General syles
-***************************************************/
-
-* {font-family: rustica,sans-serif; box-sizing: border-box; letter-spacing: 0.05rem;}
-html {width: 100%; overflow-x: hidden; background: #F2F2F2;}
-
-
-
-h1 {
-  font-weight: 600;
-  font-style: normal;
-  font-size: 36px;
-}
-
+//Basic Font Styles
+h1 {font-weight: 600; font-style: normal; font-size: 36px;}
 h2 {font-size: 28px; font-weight: 500;}
 h3 {font-size: 18px; font-weight: 300;}
 .italic {font-style: italic;}
@@ -25,23 +7,47 @@ h3 {font-size: 18px; font-weight: 300;}
 a {font-weight: 400; text-decoration: none; color: inherit} 
 a:hover {font-weight: 600;}
 
-.container {padding: 3vw;}
-
+//Basic Styling
+* {font-family: rustica,sans-serif; box-sizing: border-box; letter-spacing: 0.05rem;}
+html {width: 100%; overflow-x: hidden; background: #F2F2F2;}
+.container {padding: 2rem;}
 .dark-green-bg {background: #2B3226; color: white;}
 .forest-green-bg {background: #3D5D48; color: white;}
 .tan-bg {background:#D8D3CC; color: black!important;}
-
 .button-style { padding: 10px 20px; font-size: 18px; border-radius: 5px;}
 .button-style:hover {background:#3D5D48; font-weight: 600; }
+button {font-family: rustica,sans-serif!important;}
+.icon {height: 25px;}
+.icon:hover {transform: scale(1.1)}
 
-.header-container { height: 60vh; width: 100%; background-image: url('../assets/img.webp'); background-size: cover; background-position: 100% 100%; background-repeat: no-repeat;}
-header {position: sticky; background: -moz-linear-gradient(0deg, rgba(98,145,133,0) 0%, rgba(0,0,0,0.75) 95%); background: -webkit-linear-gradient(0deg, rgba(98,145,133,0) 0%, rgba(0,0,0,0.4010197829131653) 95%); background: linear-gradient(0deg, rgba(98,145,133,0) 0%, rgba(0,0,0,0.4010197829131653) 95%); }
-.site-header {display: flex; justify-content: space-between; align-items: center;}
-.site-navigation-list {display: flex;}
+//Hero Image and Title Text Box
+.header-container { height: 60vh; width: 100%; background-size: cover; background-position: 20% 100%; background-repeat: no-repeat; background-image: url('../assets/course.jpg');}
+@media screen and (max-width: 640px) {.header-container { height: 40vh;}}
+
+
+// Logo and Navigation Bar
+header {background: -moz-linear-gradient(0deg, rgba(98,145,133,0) 0%, rgba(0,0,0,0.95) 95%); background: -webkit-linear-gradient(0deg, rgba(98,145,133,0) 0%, rgba(0,0,0,0.4010197829131653) 95%); background: linear-gradient(0deg, rgba(98,145,133,0) 0%, rgba(0,0,0,0.4010197829131653) 95%); }
+.site-header {display: inline-flex; justify-content: space-between; align-items: center; width: 100%; padding: 1rem;}
+@media screen and (max-width: 640px) {.external-link {display: none;}}
+.site-navigation-list {display: flex; align-items: center; list-style: none;}
 .site-navigation-item {list-style: none; display: flex; justify-content: flex-end; align-items: center; padding-left: 10px; color: white;}
 
-.welcome-info {width: 100%; margin-top: -15vh; display: flex; align-items: center; justify-content: center;}
-.welcome-content {width: 94vw; color: white;}
+//Event Info Card
+.welcome-info {width: 100%; margin-top: -10vh; display: flex; align-items: center; justify-content: center;}
+.welcome-content { margin: 0rem 2rem; color: white;}
+
+//Featured Sponsorships Cards 
+
+.sqs-block-summary-v2 .summary-price .product-price {text-align: right;}
+.summary-item {background: #E3D6C0; padding: 1rem;}
+.summary-thumbnail {border: 2px solid white;}
+.sqs-gallery-meta-container .summary-title-link {font-size: 18px; font-weight: 600;}
+.sqs-block-summary-v2 .summary-block-setting-primary-metadata-tags .summary-item-has-tags .summary-metadata--primary {width: 300px;}
+
+
+.sqs-gallery-meta-container {display: inline-flex; flex-wrap: wrap; justify-content: space-between;}
+.summary-price {order: 1;}
+.summary-excerpt {order: 3;}
 
 .sqs-pill-shopping-cart-content {height: 50px!important;}
 .sqs-pill-shopping-cart.sqs-scalable-hidden {display: block!important;}
@@ -52,6 +58,8 @@ span.back-arrow:after {
   padding: 10px 20px;
   border-radius: 2px;
 }
+
+.summary-metadata-item--tags {width: 100%;}
 
 .product-quantity-input {
   order: 2 !important;

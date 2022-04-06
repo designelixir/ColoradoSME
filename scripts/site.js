@@ -25,3 +25,17 @@
 
 }());
 
+
+
+function removeZeros() {
+  var prices = document.getElementsByClassName('sqs-money-native');
+  var thisPrice;
+  var i, I;
+  for (i=0, I=prices.length; i<I; i++) {
+    thisPrice = prices[i];
+    thisPrice.innerHTML = thisPrice.innerHTML.replace(/(\.[0-9]*?)0+$/, "$1").replace(/\.$/, "");   
+  }
+}
+
+removeZeros();
+

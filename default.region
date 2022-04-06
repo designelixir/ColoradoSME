@@ -21,7 +21,7 @@
       </div>
 
 
-      <div class="welcome-info">
+      <div class="welcome-info fade-in">
       <span>
           <div class="welcome-content container forest-green-bg">
               <h1 class="center">{collection.title}</h1>

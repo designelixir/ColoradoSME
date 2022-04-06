@@ -17,7 +17,7 @@
         <squarespace:navigation navigationId="siteNav" template="site-navigation" />
       </div>
 
-      <div class="welcome-info">
+      <div class="welcome-info fade-in">
         <span>
           <div class="welcome-content container forest-green-bg">
               <squarespace:block-field id="welcome-info" columns="12" />

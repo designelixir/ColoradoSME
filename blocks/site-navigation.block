@@ -1,4 +1,4 @@
-<header class="site-header">
+<header class="site-header fade-in">
   <a href="/"><img class="dropshadow" style="width: 150px;" src="{website.logoImageUrl}" alt="Society for Mining Metallurgy and Exploration Colorado Branch Logo"/></a>
   <nav class="site-navigation">
     

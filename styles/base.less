@@ -14,16 +14,15 @@ html {width: 100%; overflow-x: hidden; background: #F2F2F2;}
 .dark-green-bg {background: #2B3226; color: white;}
 .forest-green-bg {background: #3D5D48; color: white;}
 .tan-bg {background:#D8D3CC; color: black!important;}
-.button-style { padding: 10px 20px; font-size: 18px; border-radius: 5px;}
+.button-style { padding: 10px 20px; font-size: 18px; border-radius: 5px; cursor: pointer;}
 .button-style:hover {background:#3D5D48; font-weight: 600; }
 button {font-family: rustica,sans-serif!important;}
 .icon {height: 25px;}
 .icon:hover {transform: scale(1.1)}
 
 //Hero Image and Title Text Box
-.header-container { height: 60vh; width: 100%; background-size: cover; background-position: 20% 100%; background-repeat: no-repeat; background-image: url('../assets/course.jpg');}
+.header-container { width: 100%; background-size: cover; background-position: 20% 100%; background-repeat: no-repeat; background-image: url('../assets/course.jpg');}
 @media screen and (max-width: 640px) {.header-container { height: 40vh;}}
-
 
 // Logo and Navigation Bar
 header {background: -moz-linear-gradient(0deg, rgba(98,145,133,0) 0%, rgba(0,0,0,0.95) 95%); background: -webkit-linear-gradient(0deg, rgba(98,145,133,0) 0%, rgba(0,0,0,0.4010197829131653) 95%); background: linear-gradient(0deg, rgba(98,145,133,0) 0%, rgba(0,0,0,0.4010197829131653) 95%); }
@@ -37,6 +36,18 @@ header {background: -moz-linear-gradient(0deg, rgba(98,145,133,0) 0%, rgba(0,0,0
 .welcome-content { margin: 0rem 2rem; color: white;}
 
 //Featured Sponsorships Cards 
+.sold-out .sqs-add-to-cart-button-wrapper {display: none !important}
+.sold-out { 
+
+  span.sqs-money-native:after {
+    content: " - Contact Alex Holtzapple for details."; color: gray; font-style: italic;
+  }
+
+  body.view-item  .product-excerpt:after {
+    content: "this is a test"
+  }
+
+}
 
 
 .sqs-block-summary-v2 .summary-price .product-price {text-align: right; }
@@ -53,12 +64,8 @@ header {background: -moz-linear-gradient(0deg, rgba(98,145,133,0) 0%, rgba(0,0,0
 .sqs-pill-shopping-cart-content {height: 50px!important;}
 .sqs-pill-shopping-cart.sqs-scalable-hidden {display: block!important;}
 footer {width: 100vw; text-align: center;}
+.back-arrow {display: none;}
 
-span.back-arrow:after {
-  content: "Back to Tickets";
-  padding: 10px 20px;
-  border-radius: 2px;
-}
 
 .summary-metadata-item--tags {width: 100%;}
 

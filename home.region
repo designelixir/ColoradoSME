@@ -13,19 +13,19 @@
 
     <div class="site-container">
       
-      <div class="header-container" style="background-image:url({collection.mainImage.assetUrl})">
+      <div class="header-container" style="background-image:url({collection.mainImage.assetUrl});  height: 60vh;">
         <squarespace:navigation navigationId="siteNav" template="site-navigation" />
       </div>
 
       <div class="welcome-info">
-      <span>
+        <span>
           <div class="welcome-content container forest-green-bg">
               <squarespace:block-field id="welcome-info" columns="12" />
           </div>
           <div class="welcome-content container tan-bg">
               <squarespace:block-field id="event-info" columns="12" />
           </div>
-          </span>
+        </span>
       </div>
 
 

@@ -20,15 +20,18 @@
         <squarespace:navigation navigationId="siteNav" template="site-navigation" />
       </div>
 
-
+      {.section items}{.if collection.title}
       <div class="welcome-info fade-in">
       <span>
           <div class="welcome-content container forest-green-bg">
               <h1 class="center">{collection.title}</h1>
               <a id="back-btn" style="display: none;"  href="/buy-tickets"> &larr; Back to Tickets & Sponsorships </a>
           </div>
-          </span>
+          </span>{.or}
+          <div style="height: 200px; background: red; width: 100px;"></div>
+          {.end}
       </div>
+      {.end}
 
 
       <!-- cms content injection point -->

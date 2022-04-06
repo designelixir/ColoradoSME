@@ -1,0 +1,9 @@
+<ul class="site-navigation-list">
+      <li><a href="/"><img src="../assets/home.svg" class="icon" alt="home icon"></a></li>
+      {.repeated section items}
+        <li class="site-navigation-item {.section active} active-link{.end}">
+          {.section collection}<a href="{fullUrl}" class="button-style forest-green-bg">{navigationTitle}</a>{.end}
+          {.section externalLink}<a class="external-link" href="{url}"{.section newWindow} target="_blank"{.end}>{title}</a>{.end}
+        </li>
+      {.end}
+    </ul>

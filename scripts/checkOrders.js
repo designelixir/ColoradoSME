@@ -1,5 +1,5 @@
 
-import fetch from "node-fetch";
+import fetch from "../node_modules/node-fetch";
 
 console.log("shaaaaa ----------------------------------------------------------------------------------------");
 

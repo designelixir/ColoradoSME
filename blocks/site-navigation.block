@@ -1,15 +1,14 @@
 <header class="site-header">
   <a href="/"><img class="dropshadow" style="width: 150px;" src="{website.logoImageUrl}" alt="Society for Mining Metallurgy and Exploration Colorado Branch Logo"/></a>
   <nav class="site-navigation">
-    <ul class="site-navigation-list">
-      <li><a href="/"><img src="../assets/home.svg" class="icon" alt="home icon"></a></li>
-      {.repeated section items}
-        <li class="site-navigation-item {.section active} active-link{.end}">
-          {.section collection}<a href="{fullUrl}" class="button-style forest-green-bg">{navigationTitle}</a>{.end}
-          {.section externalLink}<a class="external-link" href="{url}"{.section newWindow} target="_blank"{.end}>{title}</a>{.end}
-        </li>
-      {.end}
-    </ul>
+    
+      <a href="/"><img src="../assets/home.svg" class="icon" alt="home icon"></a>
+      <a href="https://community.smenet.org/colorado/home" target="_blank">SME Colorado Website</a>
+      <a href="/buy-tickets" class="forest-green-bg button-style">Buy Tickets</a>
+      <a href="/cart"><img src="../assets/shopping-cart.svg" class="icon" alt="shopping cart icon"></a>
+
+
+
   </nav>
 </header>
 

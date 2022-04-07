@@ -5,33 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" href="https://use.typekit.net/bcl6jxx.css">
 
-    <style>
-      #productDetails .product-mark {display: none;}
-    </style>
+    <style>#productDetails .product-mark {display: none;}</style>
+     <script type="module" src="/scripts/checkOrders.js">
+     getOrderItem();
+     </script>
 
     <!-- include system scripts, page meta, and header code injection -->
     {squarespace-headers}
   </head>
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
-
+    
     <div class="site-container">
      
       <div class="header-container" style="background-image:url({collection.mainImage.assetUrl}); ">
         <squarespace:navigation navigationId="siteNav" template="site-navigation" />
       </div>
 
-      {.section items}{.if collection.title}
+      
       <div class="welcome-info fade-in">
       <span>
           <div class="welcome-content container forest-green-bg">
               <h1 class="center">{collection.title}</h1>
               <a id="back-btn" style="display: none;"  href="/buy-tickets"> &larr; Back to Tickets & Sponsorships </a>
           </div>
-          </span>{.or}
-          <div style="height: 200px; background: red; width: 100px;"></div>
-          {.end}
+          </span>
+          
       </div>
-      {.end}
+      
 
 
       <!-- cms content injection point -->
@@ -67,19 +67,11 @@
 </html>
 
 
-<script type="module" src="scripts/inventorize.js"></script>
+
 <script>
 
-var detect = document.getElementById('productDetails');
-console.log(detect);
-if(detect.length === 0) {console.log("this is a product")}
-else {document.getElementById('back-btn').style.display = "block"}
+  var detect = document.getElementById('productDetails');
+  if(detect?.length === 0) {console.log("this is a product")}
+  else {document.getElementById('back-btn')?.style.display === "block"}
 
-
-
-
-
-
-
-
-</script>
+ </script>

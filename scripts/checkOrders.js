@@ -1,6 +1,14 @@
 
 import fetch from "../node_modules/node-fetch";
 
+
+function BALLS(){
+    console.log("HEY YOU"); 
+    alert("HEYYYYYYYYYYYYYYY")
+}
+
+BALLS()
+
 console.log("shaaaaa ----------------------------------------------------------------------------------------");
 
 const getOrderItem=async()=>{
@@ -11,7 +19,10 @@ const getOrderItem=async()=>{
     });
     const orderData = await response.json();
     return orderData;
-    }
+}
+
+getOrderItem();
+
 
       
 
@@ -78,7 +89,7 @@ async function adjustInventory(totalAdjust){
     );
     console.log("inventory has been adjusted.")
     fulfillOrder(orderId);
-  }
+}
 
 //get total ticket and make a check for if certain items should be sold out 
 
@@ -102,5 +113,4 @@ async function fulfillOrder(orderId){
 // , "shipments": [{"shipDate": "2022-08-22T00:00:00.726Z", "carrierName": "USPS", "service": "Digital Delivery", "trackingNumber": "9400109699939624119857","trackingUrl": "https://www.fedex.com/apps/fedextrack/?tracknumbers=103932814692659"}]}
 
 
-  alert("HELLOOOOOo");
- 
+export {getOrderItem, adjustInventory, fulfillOrder};

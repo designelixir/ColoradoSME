@@ -60,7 +60,11 @@
 
     <!-- other scripts, and footer code injection -->
     {squarespace-footers}
- 
+  
+  
+  <script>
+  document.getElementById('productNav').innerHTML = "<a href='/buy-tickets'>&larr; View All Tickets &amp; Sponsorships</a>"
+  </script>
 
 
 

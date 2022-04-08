@@ -26,6 +26,7 @@
       <span>
           <div class="welcome-content container forest-green-bg">
               <h1 class="center">{collection.title}</h1>
+              <h3 class="center">{collection.description}</h3>
           </div>
           </span>
           
@@ -36,9 +37,6 @@
       
 
       <main class="content-container container" role="main" data-content-field="main-content">
-       <div style="padding: 2rem 0rem;">
-        <a id="back-btn" href="/buy-tickets"> &larr; Back to Tickets & Sponsorships </a>
-      </div>
        {squarespace.main-content}
 
       </main>
@@ -64,7 +62,6 @@
     <!-- other scripts, and footer code injection -->
     {squarespace-footers}
  
-
 
 
   </body>

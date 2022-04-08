@@ -36,8 +36,11 @@
       
 
       <main class="content-container container" role="main" data-content-field="main-content">
-      
+       <div style="padding: 2rem 0rem;">
+        <a id="back-btn" href="/buy-tickets"> &larr; Back to Tickets & Sponsorships </a>
+      </div>
        {squarespace.main-content}
+
       </main>
 
       <!--Footer with open block field -->

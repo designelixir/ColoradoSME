@@ -91,3 +91,27 @@ footer {width: 100vw; text-align: center;}
   @import 'sqs-grid-breaker';
   h1 {font-size: 28px; line-height: 32px;}
 }
+
+
+
+
+// Sponsorship Blog Style 
+.cards-container {display: grid; align-items: flex-start; flex-wrap: wrap; justify-content: center; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));}
+.card-wrapper {display: flex; align-items: center; justify-content: center; min-width: 30%}
+.card:hover {transform: scale(1.05); cursor: pointer;}
+.card {clear: left; padding: 1rem; margin: 1rem; border-radius: 2px; width: 100%;  }
+.card-img {width: 100%; border: 2px solid white; margin-bottom: 10px;}
+.card-quantity {opacity: 0.75; line-height: 0; font-size: 14px;}
+.card-title-price-wrapper {display: flex; align-items: center; justify-content: space-between; width: 100%; line-height: 0px;}
+.card-title {font-size: 18px; font-weight: 600; line-height: 22px}
+.card-price {text-align: right;}
+.card-item-info {margin-left: 2rem;}
+.card-item-info h1 {line-height: 32px;}
+.card-item {display: flex; align-items: flex-start; justify-content: center; width: 100%; border: 1px solid red;}
+.card-section {width: 50%;}
+
+@media screen and (max-width: 900px) {
+  .card-item {display: block;} 
+  .card-section {width: 100%;}
+}
+

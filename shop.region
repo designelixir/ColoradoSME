@@ -17,20 +17,22 @@
     
     <div class="site-container">
      
-      <div class="header-container" style="background-image:url({collection.mainImage.assetUrl}); ">
+     {.section collection}
+      {.if mainImage.assetUrl}<div class="header-container" style="background-image:url({mainImage.assetUrl}); ">
+      {.or} <div class="header-container"> {.end}
         <squarespace:navigation navigationId="siteNav" template="site-navigation" />
       </div>
-
       
-      <div class="welcome-info fade-in">
+       {.if title}<div class="welcome-info fade-in">
       <span>
-          <div class="welcome-content container forest-green-bg">
-              <h1 class="center">{collection.title}</h1>
-              <h3 class="center">{collection.description}</h3>
+         <div class="welcome-content container forest-green-bg">
+              <h1 class="center">{title}</h1>
+              {.if description}<h3 class="center">{description}</h3>{.end}
           </div>
           </span>
           
-      </div>
+      </div>{.end}
+      {.end}
       
 
 

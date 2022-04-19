@@ -7,8 +7,8 @@ var xhr = new XMLHttpRequest();
 xhr.open("GET", url);
 
 xhr.setRequestHeader("Authorization", "Bearer 2c247a47-b073-42e9-916a-549cf0b0aeed");
-xhr.setRequestHeader("User-Agent", "YOUR_CUSTOM_APP_DESCRIPTION");
-xhr.setRequestHeader("Accept", "application/json");
+
+
 
 xhr.onreadystatechange = function () {
    if (xhr.readyState === 4) {

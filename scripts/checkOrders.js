@@ -1,13 +1,7 @@
 
 import fetch from "../node_modules/node-fetch";
 
-
-function BALLS(){
-    console.log("HEY YOU"); 
-    alert("HEYYYYYYYYYYYYYYY")
-}
-
-BALLS()
+alert("HEYYYYYY")
 
 console.log("shaaaaa ----------------------------------------------------------------------------------------");
 

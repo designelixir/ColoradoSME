@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" href="https://use.typekit.net/bcl6jxx.css">
+    <script type="module" src="scripts/stepOne.js"></script>
 
 
     <!-- include system scripts, page meta, and header code injection -->
@@ -62,5 +63,4 @@
   </body>
 </html>
 
-<script type="module" src="scripts/checkOrders.js"></script>
 

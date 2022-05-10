@@ -1,11 +1,16 @@
+<script>console.log({@|json-pretty})</script>
+
 
 <squarespace:block-field id="sponsorship-info" columns="12" />
 
 <div class="cards-container" >
 {.repeated section items}
-<div class="card-wrapper" onclick="window.location='{fullUrl}'">
+<div class="card-wrapper" {.if starred} style="opacity: 0.5!important;" {.end} onclick="window.location='{fullUrl}'">
 <div class="card tan-bg">
+
+
   <img class="card-img" src="{assetUrl}"/>
+
   <p class="card-quantity">{customContent.packagequantity}</p>
   <div class="card-title-price-wrapper">
     <a class="card-title" href="{fullUrl}" target="_blank">{title}</a>

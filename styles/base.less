@@ -41,8 +41,17 @@ header {background: -moz-linear-gradient(0deg, rgba(98,145,133,0) 0%, rgba(0,0,0
 
 //Featured Sponsorships Cards 
 .sold-out .sqs-add-to-cart-button-wrapper {display: none !important}
-.sold-out { span.sqs-money-native:after {content: " - Contact Alex Holtzapple for details."; color: gray; font-style: italic;}}
+.sold-out { span.sqs-money-native:after {content: " - Unavailable"; color: gray; font-style: italic;}}
+.sold-out .product-image {opacity: 0.5}
+.product-title {min-width: 100%!important; display: block; margin: 10px 0 0 5px!important; font-size: 18px!important; font-weight: 700; text-align: left;}
+.product-scarcity {font-family: rustica, sans-serif!important; font-size: 16px!important; order: 3!important; padding-left: 10px; color: gray; margin-top: 0!important;}
+.product-scarcity::before {content: "- "}
+#productDetails {display: flex; justify-content: flex-start!important; }
+.product-meta {display: flex; flex-wrap: wrap; align-items: center; justify-content: center;}
 
+.product:hover .product-title {font-weight: 700;}
+
+.product div .product-image  {width: 100%!important;}
 
 
 //Responsive Logo Grid
@@ -60,6 +69,7 @@ header {background: -moz-linear-gradient(0deg, rgba(98,145,133,0) 0%, rgba(0,0,0
 .summary-excerpt {width: 100%;}
 .sqs-add-to-cart-button-wrapper {width: 100%; order: 7!important;}
 .product-quantity-input {order: 6!important;}
+
 
 .sqs-block-summary-v2 .summary-price .product-price {text-align: right; }
 .summary-item {background: #E3D6C0; padding: 1rem; border-radius: 2px;}
